@@ -9,9 +9,7 @@ $(document).ready(function() {
 	$('#search').bind('webkitspeechchange', function(data) {
 		var searchData = $(this).val();
 		$('section#wall').html('');
-		$('section#wall').instagramPictures({
-			search: searchData
-		});
+		wallInstagram.search(searchData);
 	});
 
 	$('#search').keyup(function(data) {
